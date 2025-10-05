@@ -7,7 +7,7 @@
 }  
 body{
     overflow-x: hidden;
-    width: fit-content;
+    width: 100dvw;
 } 
 section:first-of-type{
     background: linear-gradient(to right bottom, rgb(85, 153, 231) 50%, rgb(255, 255, 255) 50.3%);
@@ -19,7 +19,7 @@ section:first-of-type{
     align-items: center;
 }
 img{
-    max-width: 400px;
+    max-width: 300px;
     min-width: 300px;
     object-fit: contain;
 }
@@ -68,6 +68,7 @@ section:last-of-type{
 }
 
 footer{
+    margin-top: 3rem;
     background-color: rgb(85, 153, 231);
     color: white;
     display: flex;
@@ -77,7 +78,7 @@ footer{
 }
 .contact{
     max-width: 300px;
-    min-width: 400px;
+    min-width: 250px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -89,7 +90,6 @@ footer{
 @media (max-width:500px){
     section:first-of-type{
         flex-direction: column;
-        /* padding: 20px 100px 100px 100px ; */
         padding: 50px;
     }
     .sec_title{
@@ -98,12 +98,14 @@ footer{
     footer{
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        justify-content: space-around;
+        gap: 30px ;
+        padding-bottom: 0;
     }
 }
 @media (max-width:800px){
     section:last-of-type{
-        padding: 90px ;
+        padding: 0 ;
     }
     .cards{
         justify-content: space-evenly;
